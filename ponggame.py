@@ -1,4 +1,4 @@
-import turtle  # very basic gui design module
+import turtle  
 import time
 import os
 
@@ -72,7 +72,7 @@ max_dy = 6
 ball.dx = 2
 ball.dy = 2
 
-#Function for moving a up
+
 
 
 def paddle_a_up():
@@ -81,7 +81,7 @@ def paddle_a_up():
         y += 20
         paddle_a.sety(y)  # move the paddle 20px up
 
-#Function for movin a down
+
 
 
 def paddle_a_down():
@@ -97,7 +97,7 @@ def paddle_b_up():
         y += 20
         paddle_b.sety(y)  # move the paddle 20px up
 
-#Function for movin a down
+
 
 
 def paddle_b_down():
@@ -111,12 +111,12 @@ aiPaddle = paddle_a
 ai_down = paddle_a_down
 ai_up = paddle_a_up
 
-#AI BOT for singleplayer mode
+#AI BOT 
 def ai_paddle_move():
     _y = ball.ycor()
     y = aiPaddle.ycor()
 
-    #if the paddle is higher that the ball and the ball is moving downwards then go down
+    
     if y > _y and ball.dy < 0:
         ai_down()
     elif y < _y and ball.dy > 0:
@@ -176,11 +176,11 @@ while True:
     if (ball.xcor() > 340 and ball.xcor() < 350):
         if ball.ycor() < paddle_b.ycor() + 50 and ball.ycor() > paddle_b.ycor() - 50:
             ball.setx(335)
-            ball.dx *= -1.1  # increase speed each time we hit the ball
+            ball.dx *= -1.1  
             
 
     if (ball.xcor() < -340 and ball.xcor() > -350):
         if ball.ycor() < paddle_a.ycor() + 50 and ball.ycor() > paddle_a.ycor() - 50:
             ball.setx(-335)
-            ball.dx *= -1.1  # increase speed each time we hit the ball
+            ball.dx *= -1.1  
            
