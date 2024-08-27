@@ -1,2 +1,2 @@
 # python-pong
-a basic game created using only python(not pygame) there's barely any oop's or classes used so basically this project is for learning purpose only.
+Pong game created using only Python (not Pygame), with minimal use of OOP or classes. 
